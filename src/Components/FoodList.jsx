@@ -1,5 +1,6 @@
 import React from "react";
 import FoodItem from "./FoodItem";
+import Error from "./Error"
 
 // export default function FoodList(props) {
 //     let item = props.item;
@@ -46,11 +47,10 @@ import FoodItem from "./FoodItem";
 export default function FoodList({ item }) {
 
     if (item.length===0){
-        return <> 
-        <div class="alert alert-danger container" role="alert">
- <h1> No Food Available</h1>
-</div>
-        </>
+        return <>
+         <Error/>
+         </>
+        
     }
     else{
         return (

@@ -3,7 +3,7 @@ import FoodList from './Components/FoodList'
 
 export default function App() {
 
-  const fooditem=["Pizza","Pink Pasta","Burger","Fries","Hakka Noodles","DahiPuri"]
+  const fooditem=[]
   return (
     <FoodList item={fooditem}/>
   )
