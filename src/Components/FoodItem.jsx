@@ -5,7 +5,7 @@ import style from "./css_modules/FoodItem.module.css"
 
 export default function FoodItem({x}) {
   return (
-    <li key={x} className={style.bgcolor}>
+    <li key={x} className={`list-group-item ${style.bgcolor}`}>
         {x}
     </li>
   )

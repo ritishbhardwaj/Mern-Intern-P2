@@ -18,7 +18,7 @@ export default function FoodList({ item }) {
             <>
               <div className="container pt-4">
                 <h3 className="pb-3">Food Items</h3>
-                <ul className="list-group  lst">
+                <ul className="list-group ">
                   {item.map((x) => {
                     return (
                       <FoodItem x={x}/>
