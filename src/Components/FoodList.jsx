@@ -37,25 +37,37 @@ import React from "react";
 //   )
 // }
 
+
+
 // Another way to do using mapping
+//here we Are using the looping concept using mapping
 
 export default function FoodList({ item }) {
-  //  here the {item <-- this name is same as the name in app.jsx}
-  // let item = props.item;
-  return (
-    <>
-      <div className="container pt-4">
-        <h3 className="pb-3">Food Items</h3>
-        <ul className="list-group">
-          {item.map((x) => {
-            return (
-              <li key={x} className="list-group-item">
-                {x}
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </>
-  );
+
+    if (item.length===0){
+        return <> 
+        <div class="alert alert-danger container" role="alert">
+ <h1> No Food Available</h1>
+</div>
+        </>
+    }
+    else{
+        return (
+            <>
+              <div className="container pt-4">
+                <h3 className="pb-3">Food Items</h3>
+                <ul className="list-group">
+                  {item.map((x) => {
+                    return (
+                      <li key={x} className="list-group-item">
+                        {x}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </>
+          );
+    }
+  
 }
