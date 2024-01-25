@@ -18,7 +18,7 @@ export default function FoodList({ item }) {
             <>
               <div className="container pt-4">
                 <h3 className="pb-3">Food Items</h3>
-                <ul className="list-group">
+                <ul className="list-group  lst">
                   {item.map((x) => {
                     return (
                       <FoodItem x={x}/>
@@ -33,7 +33,7 @@ export default function FoodList({ item }) {
 }
 
 
-//  First method told by sir
+//---------------------------  First method told by sir  -----------------------------------
 
 // export default function FoodList(props) {
     //     let item = props.item;
@@ -52,7 +52,8 @@ export default function FoodList({ item }) {
 //   )
 // }
 
-//    Another way  told by sir
+//------------------------  Another way  told by sir ----------------------------------
+
 // export default function FoodList({item}) {   //  here the {item <-- this name is same as the name in app.jsx}
 //     // let item = props.item;
 //   return (<>
