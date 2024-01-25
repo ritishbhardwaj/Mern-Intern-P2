@@ -1,4 +1,5 @@
 import React from "react";
+import FoodItem from "./FoodItem";
 
 // export default function FoodList(props) {
 //     let item = props.item;
@@ -59,9 +60,7 @@ export default function FoodList({ item }) {
                 <ul className="list-group">
                   {item.map((x) => {
                     return (
-                      <li key={x} className="list-group-item">
-                        {x}
-                      </li>
+                      <FoodItem x={x}/>
                     );
                   })}
                 </ul>
